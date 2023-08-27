@@ -16,12 +16,21 @@ In this project, I define a magnitude for quantifying the dip observed in NM dat
 ### Neutron Monitor Stations
 Since this is part of a **data-driven approach** to building theoretical frameworks to model (and hopefully predict) ICMEs, it is important to use reliable data sources to analyze existing data and find patterns/correlations in it. 13 NM stations were identified for their low cutoff rigidity values (<1 GV), all located in the Arctic and Antarctic regions (maintained by Bartol Research Institute, University of Delaware), and their neutron monitor time series data was smoothed and analyzed to look for and quantify Forbush Decreases. The _Neutron Monitor Database's_ NEST interface was used to extract .csv files containing counts/sec NM data for ~4 days before-and-after the shock arrival and magnetic cloud passing times respectively, smoothed and searched for dips in the relevant time interval. Data source - https://www.nmdb.eu/nest/
 
-
-
-
 ### _In-situ_ satellites
+Space-based satellites such as NASA's WIND or ISRO's Aditya L1, located at Lagrange points in between the Earth and Sun, have instruments to carry out _in-situ_ observations of ICMEs, geomagnetic storms, etc. The WIND satellite detects and records data for various properties of ICMEs, and its catalogue was used to get the numbers for these ICME properties to study their correlations with FD magnitudes. Data source - https://wind.nasa.gov/ICME_catalog/ICME_catalog_viewer.php 
 
-## What I did 
+## Code written & plots generated 
+I smoothed NM counts/sec data from 13 chosen NM stations corresponding to 11 ICME events (in 2015, 2014) and quantified the dip sizes in the NM data. The code for doing this and the time-series plots generated (along with marking shock arrival, start, and end of magnetic cloud) can be found in the folder - "**Plotting data & finding dip-size**" in this repo. I wrote event-based and station-based functions to generate time series plots and the relevant FD magnitudes (dip sizes). The exact methodology for smoothening data and quantifying the dip size is explained clearly in the Jupyter Notebooks. Chosen NM stations: OULU, SNAE, APTY, FSMT, INVK, NAIN, PWNK, THUL, NEU3, SOPB, SOPO, MRNY, TERA
+
+After generating numbers to quantify the dip sizes from my definition, I plotted them individually with the following ICME properties (data from WIND catalogue) - 
+1. Mean Magnetic Field inside the magnetic cloud: $B$ (in nT)
+2. Mean Solar Wind Bulk Velocity: $V_{sw}$ (in km/s)
+3. Mean Expansion velocity: $V_{exp}$ (in km/s)
+4. Disturbance Storm Time (DST) index (in nT)
+5. Mean Turbulence in Magnetic Field inside the magnetic cloud: $\delta B/B$ (data obtained from Debesh Bhattacharjee's PhD thesis at IISER, Pune)
+6. Mean Turbulence in Net Proton flux: $\delta n_{p}/n_{p}$ (data obtained from Debesh Bhattacharjee's PhD thesis at IISER, Pune)
+
+I also plotted this data into NM station-wise subplots and plotted the best-fit 3-degree polynomial curves to every dataset. I also generated numbers quantifying 4 kinds of **statistical correlations** for each ICME event's, each NM station's data set. These 4 are - Pearson R, Spearman R, Kendall Tau, and Linear Regression.
 
 ## Acknowledgements
 
