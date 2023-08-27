@@ -47,7 +47,7 @@ The code for generating all these plots and finding out correlation coefficients
 Finally, the "**Correlation coefficients table**" lists all 4 types of correlation coefficients found for all 6 ICME properties in a table. _If I were asked to show the outcome of 2 months of data analysis work in a single glance, I would show this table._
 
 ## Scope for future work/extensions
-Some immediate actionable extensions I can identify that will add value to this project and/or be relevant to developing a theoretical model -
+Some immediate actionable extensions that I think will add value to this project and/or be relevant to developing a theoretical model -
 1. Analyzing many more ICME events (this project only has results from 11 out of 151 events filtered by Debesh Bhattacharjee) for better statistical results.
 2. Generating correlation coefficients that are more relevant for this kind of data and using their results.
 3. Plotting best-fit polynomial curves for all degrees from 1-5, finding correlation coefficients corresponding to every curve, and finding out which degree curve(s) give the highest correlation. I believe this would be a very relevant step towards developing theoretical models for ICMEs, by giving us a sense of what powers (indices) are involved, given that sufficiently large number of events are analyzed).
@@ -56,5 +56,5 @@ Some immediate actionable extensions I can identify that will add value to this 
 7. Like FD magnitude (dip size), defining and generating numbers for "Recovery times" of NM data after Forbush Decrease and doing all the above-mentioned analysis for that quantity too. (correlating recover times with ICME properties)
 
 ## Acknowledgements & Learnings
-I thank Prof. Prasad Subramanian for introducing me to this project at the intersection of Space Weather and Solar Physics and guiding me for the ~2 months that I worked on this problem under him. I also thank Dr. Debesh Bhattacharjee for his turbulence in magnetic field and proton flux data that I used to find 2 more kinds of correlations, in addition to the ICME properties's data from the WIND catalogue. Apart from a basic understanding of the physical processes influencing ICMEs and near-Earth space weather, working on this project also added a good number of transferable and widely used skills of data analysis and plotting in Python to my arsenal.
+I thank [Prof. Prasad Subramanian](https://iiserpune.irins.org/profile/49252) for introducing me to this project at the intersection of Space Weather and Solar Physics and guiding me for the ~2 months that I worked on this problem under him. I also thank [Dr. Debesh Bhattacharjee](https://www.researchgate.net/profile/Debesh-Bhattacharjee) for his turbulence in magnetic field and proton flux data that I used to find 2 more kinds of correlations, in addition to the ICME properties data from the WIND catalogue. Apart from a basic understanding of the physical processes influencing ICMEs and near-Earth space weather, working on this project also added a good number of transferable and widely used skills of data analysis and plotting in Python to my arsenal.
 
