@@ -16,7 +16,7 @@ In this project, I define a magnitude for quantifying the dip observed in NM dat
 ### Neutron Monitor Stations
 Since this is part of a **data-driven approach** to building theoretical frameworks to model (and hopefully predict) ICMEs, it is important to use reliable data sources to analyze existing data and find patterns/correlations in it. 13 NM stations were identified for their low cutoff rigidity values (<1 GV), all located in the Arctic and Antarctic regions (maintained by Bartol Research Institute, University of Delaware), and their neutron monitor time series data was smoothed and analyzed to look for and quantify Forbush Decreases. The _Neutron Monitor Database's_ NEST interface was used to extract .csv files containing counts/sec NM data for ~4 days before-and-after the shock arrival and magnetic cloud passing times respectively, smoothed and searched for dips in the relevant time interval. Data source - https://www.nmdb.eu/nest/
 
-### _In-situ_ satellites
+### Space-based satellites
 Space-based satellites such as NASA's WIND or ISRO's Aditya L1, located at Lagrange points in between the Earth and Sun, have instruments to carry out _in-situ_ observations of ICMEs, geomagnetic storms, etc. The WIND satellite detects and records data for various properties of ICMEs, and its catalogue was used to get the numbers for these ICME properties to study their correlations with FD magnitudes. Data source - https://wind.nasa.gov/ICME_catalog/ICME_catalog_viewer.php 
 
 ## Code written & plots generated 
@@ -39,13 +39,14 @@ The code for generating all these plots and finding out correlation coefficients
 Finally, the "**Correlation coefficients table**" lists all 4 types of correlation coefficients found for all 6 ICME properties in a table. _If I were asked to show the outcome of 2 months of data analysis work in a single glance, I would show this table._
 
 ## Scope for future work/extensions
+Some immediate actionable extensions I can identify that will add value to this project and/or be relevant to developing a theoretical model -
 1. Analyzing many more ICME events (this project only has results from 11 out of 151 events filtered by Debesh Bhattacharjee) for better statistical results.
 2. Generating correlation coefficients that are more relevant for this kind of data and using their results.
 3. Plotting best-fit polynomial curves for all degrees from 1-5, finding correlation coefficients corresponding to every curve, and finding out which degree curve(s) give the highest correlation. I believe this would be a very relevant step towards developing theoretical models for ICMEs, by giving us a sense of what powers (indices) are involved, given that sufficiently large number of events are analyzed).
 5. Testing goodness of fit ($\chi^2&) of data with theoretical predictions of multiple existing theories.
 6. Implementing a mechanized method to filter out clean dip and/or recovery profiles of NM data.
-7. Like FD magnitude (dip size), defining and generating numbers for "recovery period" of NM data after Forbush Decrease and doing all the above-mentioned analysis for that quantity too.
+7. Like FD magnitude (dip size), defining and generating numbers for "Recovery times" of NM data after Forbush Decrease and doing all the above-mentioned analysis for that quantity too. (correlating recover times with ICME properties)
 
-## Acknowledgements
-I thank Prof. Prasad Sub
+## Acknowledgements & Learnings
+I thank Prof. Prasad Subramanian for introducing me to this project at the intersection of Space Weather and Solar Physics and guiding me for the ~2 months that I worked on this problem under him. I also thank Dr. Debesh Bhattacharjee for his turbulence in magnetic field and proton flux data that I used to find 2 more kinds of correlations, in addition to the ICME properties's data from the WIND catalogue. Apart from a basic understanding of the physical processes influencing ICMEs and near-Earth space weather, working on this project also added a good number of transferable and widely used skills of data analysis and plotting in Python to my arsenal.
 
