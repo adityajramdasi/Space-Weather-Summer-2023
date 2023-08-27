@@ -33,8 +33,19 @@ After generating numbers to quantify the dip sizes from my definition, I plotted
 I also plotted this data into NM station-wise subplots and plotted the best-fit 3-degree polynomial curves to every dataset. I also generated numbers quantifying 4 kinds of **statistical correlations** for each ICME event's, each NM station's data set. These 4 are - Pearson R, Spearman R, Kendall Tau, and Linear Regression. All these numbers can be found above the respective station-wise subplots in the relevant Jupyter Notebooks.
 Another different kind of graph I plotted was to find correlations between the _cutoff rigidity_ of NM stations (13 of them, with ~9 unique values from 0.01-1GV) and FD magnitudes (dip sizes).
 The code for generating all these plots and finding out correlation coefficients, along with the plots themselves, can be found in the folder - "**Correlation plots**" in this repo. 
+
 **Notably, the highest average statistical correlation was found between _Mean Solar Wind Bulk Velocity_ and FD magnitude: 0.72** (even with just 11 ICME events).
 
-## Acknowledgements
+Finally, the "**Correlation coefficients table**" lists all 4 types of correlation coefficients found for all 6 ICME properties in a table. _If I were asked to show the outcome of 2 months of data analysis work in a single glance, I would show this table._
 
+## Scope for future work/extensions
+1. Analyzing many more ICME events (this project only has results from 11 out of 151 events filtered by Debesh Bhattacharjee) for better statistical results.
+2. Generating correlation coefficients that are more relevant for this kind of data and using their results.
+3. Plotting best-fit polynomial curves for all degrees from 1-5, finding correlation coefficients corresponding to every curve, and finding out which degree curve(s) give the highest correlation. I believe this would be a very relevant step towards developing theoretical models for ICMEs, by giving us a sense of what powers (indices) are involved, given that sufficiently large number of events are analyzed).
+5. Testing goodness of fit ($\chi^2&) of data with theoretical predictions of multiple existing theories.
+6. Implementing a mechanized method to filter out clean dip and/or recovery profiles of NM data.
+7. Like FD magnitude (dip size), defining and generating numbers for "recovery period" of NM data after Forbush Decrease and doing all the above-mentioned analysis for that quantity too.
+
+## Acknowledgements
+I thank Prof. Prasad Sub
 
