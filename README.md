@@ -30,7 +30,10 @@ After generating numbers to quantify the dip sizes from my definition, I plotted
 5. Mean Turbulence in Magnetic Field inside the magnetic cloud: $\delta B/B$ (data obtained from Debesh Bhattacharjee's PhD thesis at IISER, Pune)
 6. Mean Turbulence in Net Proton flux: $\delta n_{p}/n_{p}$ (data obtained from Debesh Bhattacharjee's PhD thesis at IISER, Pune)
 
-I also plotted this data into NM station-wise subplots and plotted the best-fit 3-degree polynomial curves to every dataset. I also generated numbers quantifying 4 kinds of **statistical correlations** for each ICME event's, each NM station's data set. These 4 are - Pearson R, Spearman R, Kendall Tau, and Linear Regression.
+I also plotted this data into NM station-wise subplots and plotted the best-fit 3-degree polynomial curves to every dataset. I also generated numbers quantifying 4 kinds of **statistical correlations** for each ICME event's, each NM station's data set. These 4 are - Pearson R, Spearman R, Kendall Tau, and Linear Regression. All these numbers can be found above the respective station-wise subplots in the relevant Jupyter Notebooks.
+Another different kind of graph I plotted was to find correlations between the _cutoff rigidity_ of NM stations (13 of them, with ~9 unique values from 0.01-1GV) and FD magnitudes (dip sizes).
+The code for generating all these plots and finding out correlation coefficients, along with the plots themselves, can be found in the folder - "**Correlation plots**" in this repo. 
+**Notably, the highest average statistical correlation was found between _Mean Solar Wind Bulk Velocity_ and FD magnitude: 0.72** (even with just 11 ICME events).
 
 ## Acknowledgements
 
