@@ -1,4 +1,4 @@
-# Correlating Forbush Decrease Magnitudes and ICME properties
+# Correlating Forbush Decrease Magnitudes & ICME properties
 
 This public repository houses the data analysis work I did in analyzing Neutron Monitor time series data for my Summer 2023 research assistantship under [Prof. Prasad Subramanian] at IISER Pune. Includes the code I wrote, plots I generated, and statistical correlations I found between Forbush Decrease magnitudes and various ICME properties.
 
