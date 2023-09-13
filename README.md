@@ -1,4 +1,5 @@
-# Correlating Forbush Decrease Magnitudes & ICME properties
+# Effects of ICMEs on Space Weather using neutron monitors 
+#### Correlating Forbush Decrease Magnitudes with ICME properties to find patterns
 
 This public repository houses the data analysis work I did in analyzing Neutron Monitor time series data for my Summer 2023 research assistantship under [Prof. Prasad Subramanian](https://iiserpune.irins.org/profile/49252) at [IISER Pune](https://www.iiserpune.ac.in/). Includes the code I wrote, plots I generated, and statistical correlations I found between Forbush Decrease magnitudes and various ICME properties.
 
